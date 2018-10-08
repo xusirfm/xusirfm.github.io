@@ -1,0 +1,324 @@
+/* 设置滚动条的样式 */
+.book .book-summary nav::-webkit-scrollbar,
+.right.page-toc ul::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* 滚动槽 */
+.book .book-summary nav::-webkit-scrollbar-track,
+.right.page-toc ul::-webkit-scrollbar {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+/* 滚动条滑块 */
+.book .book-summary nav::-webkit-scrollbar-thumb,
+.right.page-toc ul::-webkit-scrollbar {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+.book a {
+    outline: none;
+}
+
+.book .book-summary {
+    overflow: hidden;
+    border: none;
+    background: #F5F7F9;
+}
+
+.book .book-summary .book-summary-header {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 60px;
+    background: #FFF;
+    box-shadow: 0 1px 4px #eae8e8;
+    margin-bottom: 1px;
+
+}
+
+.book .book-summary .avatar {
+    height: 50px;
+}
+
+.book .site-name {
+    font-size: 18px;
+    color: #0f88eb;
+    margin-left: 10px;
+}
+
+.book .book-summary nav {
+    padding: 20px 0 80px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.book .book-summary .exc-trigger {
+    right: 20px;
+    left: auto;
+    font-size: 20px;
+    color: #888
+}
+
+.book-summary ul.summary li {
+    border-left: 1px solid #e6ecf1;
+}
+
+.book-summary ul.summary li.active>a {
+    background: #FFF;
+    border: 1px solid #e6ecf1;
+    border-right: none;
+    border-left: none;
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+    padding-left: 18px;
+}
+
+.book .book-summary ul.summary li a:hover {
+    background: #E6ECF1
+}
+
+.book .book-summary ul.summary li.active a:hover {
+    background: #FFF
+}
+
+.book .book-summary ul.summary li span {
+    color: #959798;
+    margin-top: 10px;
+}
+
+.book .book-summary ul.summary .articles li.chapter a {
+    color: #686b6d
+}
+
+.book .book-summary ul.summary .articles li.chapter.active a {
+    color: #0f88eb
+}
+
+#book-search-input {
+    display: none;
+}
+
+.book-header {
+    box-shadow: 0 1px 4px #eae8e8;
+
+}
+
+.book-heade .book-name {
+    font-size: 20px;
+    color: #333;
+}
+
+.book-header .fa-list-ul {
+    font-size: 18px;
+}
+
+.book-header .btn {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.book .page-wrapper {
+    margin-top: 80px;
+}
+
+.book .book-body {
+    border-left: 1px solid #efeff0;
+    padding-bottom: 0
+}
+
+.book-body .markdown-section .article-header a {
+    text-decoration: none
+}
+
+.book-body .markdown-section .fa-link {
+    font-size: .7em;
+    margin-left: 10px;
+    display: none;
+}
+
+
+.book-summary ul.summary li a:hover {
+    color: #008cff;
+    text-decoration: none
+}
+
+.book .book-body .body-inner,
+.navigation {
+    z-index: 30;
+}
+
+.book-header {
+    background: #FFF;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #333;
+}
+
+.book-body {
+    background: rgba(245, 247, 249, 0.62);
+}
+
+.book-body .page-inner {
+    display: flex;
+    max-width: 1000px;
+
+}
+
+.book-body .page-inner #book-search-results {
+    padding: 20px;
+    background: #fff;
+    flex: 1;
+    width: calc(100% - 200px);
+}
+
+.navigation {
+    top: auto;
+    bottom: 200px;
+}
+
+.navigation i.fa {
+    color: #0f88eb
+}
+
+.navigation i.fa:hover {
+    color: #000;
+}
+
+.right.page-toc {
+    margin-left: 20px;
+    flex-shrink: 0;
+    width: 240px;
+    box-sizing: border-box
+}
+
+.right.page-toc ul {
+    width: 240px;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+    max-height: 500px;
+    overflow-y: auto;
+
+}
+
+.right.page-toc li {
+    border-left: 1px solid #E6ECF1;
+    font-size: 12px;
+    padding: 5px 30px 5px 15px;
+    line-height: 1.5;
+}
+
+.right.page-toc li.active {
+    border-left: 2px solid rgb(56, 132, 255);
+}
+
+.right.page-toc li a {
+    color: #74818D;
+}
+
+.right.page-toc li.active a {
+    color: #0f88eb
+}
+
+.right.page-toc li.h3 a {
+    padding-left: 20px;
+}
+
+.book .back-to-top {
+    z-index: 99;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    right: 50px;
+
+}
+
+.back-to-top i {
+    left: 11px;
+    top: 11px;
+    font-size: 18px;
+}
+
+/* markdown */
+.markdown-section code {
+    background-color: #fff5f5;
+    color: #ff502c;
+}
+
+.markdown-section blockquote {
+    color: #666
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    border-bottom: 1px solid #eaecef;
+    margin: 0.6em 0;
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+/* 一致化 horizontal rule */
+.markdown-section hr {
+    margin: 40px 0 20px;
+    padding: 0;
+    height: 2px;
+    border: none;
+    background-color: #e2e0e0;
+    background-image: repeating-linear-gradient(-45deg, #fff, #fff 2px, transparent 2px, transparent 8px);
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs,
+.book .book-body .page-wrapper .page-inner section.normal code .hljs {
+    background: #f7f7f7 !important;
+}
+
+.copy-code-btn {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 55%, .8);
+    transition: color .1s;
+}
