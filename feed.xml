@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>徐Sir的网志</title>
+    <description>侃侃理想、谈谈人生、敲敲代码。</description>
+    <link>http://localhost:40001</link>
+    <atom:link href="http://localhost:40001/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>实现原理：前端核心技术点深入探研</title>
+        <category>tech</category>
+        <description>Memcached服务器在启动时需要对关键的参数进行配置，下面我们就看一看Memcached在启动时需要设定哪些关键参数以及这些参数的作用。</description>
+        <pubDate>2017-07-30 18:06:42 </pubDate>
+        <link>http://localhost:40001/tech/webdeep.html</link>
+        <guid isPermaLink="true">http://localhost:40001/tech/webdeep.html</guid>
+      </item>
+    
+  </channel>
+</rss>
