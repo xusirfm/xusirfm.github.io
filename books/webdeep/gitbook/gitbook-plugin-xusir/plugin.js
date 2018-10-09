@@ -2,12 +2,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
 
     $('.book-header .fa-align-justify').addClass('fa-list-ul')
     $('.page-inner').off
-    // var nice = $(".right.page-toc").niceScroll({
-    //     cursorcolor: "#c7c7c7",
-    //     cursorborder: "1px solid #c7c7c7",
-    //     cursorwidth: 5,
-    //     autohidemode: true
-    // });
+
     gitbook.events.on('start', function (e, config) {
 
     })
