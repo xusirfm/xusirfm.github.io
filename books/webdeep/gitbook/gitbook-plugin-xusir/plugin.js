@@ -7,7 +7,11 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
 
     })
     gitbook.events.on('page.change', function () {
-
+        $(function () {
+            $('code.hljs').each(function (i, block) {
+                hljs.lineNumbersBlock(block);
+            });
+        })
 
         $('pre code').each(function (i, block) {
             //空格替换成 &nbsp;

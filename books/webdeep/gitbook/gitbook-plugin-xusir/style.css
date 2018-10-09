@@ -53,7 +53,7 @@
 
 .book .site-name {
     font-size: 18px;
-    color: #0f88eb;
+    color: #1abc9c;
     margin-left: 10px;
 }
 
@@ -74,11 +74,16 @@
     border-left: 1px solid #e6ecf1;
 }
 
+.book-summary ul.summary li a:hover {
+    color: #1abc9c
+}
+
 .book-summary ul.summary li.active>a {
     background: #FFF;
     border: 1px solid #e6ecf1;
     border-right: none;
     border-left: none;
+    color: #1abc9c
 }
 
 .book .book-summary ul.summary li a,
@@ -86,13 +91,12 @@
     padding-left: 18px;
 }
 
-.book .book-summary ul.summary li a:hover {
-    background: #E6ECF1
+.book .book-summary ul.summary li a:hover,
+.book .book-summary ul.summary li.active a:hover {
+    background: #E6ECF1;
+    color: #1abc9c
 }
 
-.book .book-summary ul.summary li.active a:hover {
-    background: #FFF
-}
 
 .book .book-summary ul.summary li span {
     color: #959798;
@@ -104,7 +108,7 @@
 }
 
 .book .book-summary ul.summary .articles li.chapter.active a {
-    color: #0f88eb
+    color: #1abc9c
 }
 
 #book-search-input {
@@ -226,7 +230,7 @@
 }
 
 .right.page-toc li.active {
-    border-left: 2px solid rgb(56, 132, 255);
+    border-left: 2px solid #1abc9c;
 }
 
 .right.page-toc li a {
@@ -234,7 +238,7 @@
 }
 
 .right.page-toc li.active a {
-    color: #0f88eb
+    color: #1abc9c
 }
 
 .right.page-toc li.h3 a {
@@ -256,50 +260,191 @@
     font-size: 18px;
 }
 
-/* markdown */
-.markdown-section code {
-    background-color: #fff5f5;
-    color: #ff502c;
+.markdown-section {
+    background: #FFF;
+    padding: 30px 20px;
+}
+
+
+.markdown-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: auto;
+    display: block;
+    padding: 15px 1em 15px 2em;
+}
+
+.markdown-section table th {
+    font-weight: bold;
+}
+
+.markdown-section table th,
+.markdown-section table td {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
+
+.markdown-section table tr th:first-child,
+.markdown-section table tr td:first-child {
+    white-space: nowrap;
+}
+
+.markdown-section table tr {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.markdown-section table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+.markdown-section fieldset,
+.markdown-section img {
+    border: 0;
+    margin-left: 5px;
+    max-width: 500px;
 }
 
 .markdown-section blockquote {
-    color: #666
+    position: relative;
+    color: #666;
+    padding: 10px;
+    border-left: 3px solid #cbcbcb;
+    background-color: #fcfcfc;
+
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    color: #222;
-    line-height: 1.5;
+.markdown-section blockquote p,
+.markdown-section blockquote p,
+.markdown-section blockquote p {
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
-    font-size: 2.2em;
+.markdown-section acronym,
+.markdown-section abbr {
+    border-bottom: 1px dotted;
+    font-variant: normal;
 }
 
-h2 {
-    border-bottom: 1px solid #eaecef;
-    margin: 0.6em 0;
-    font-size: 1.6em;
+.markdown-section abbr {
+    cursor: help;
 }
 
-h3 {
-    font-size: 1.4em;
+.markdown-section del {
+    text-decoration: line-through;
 }
 
-h4 {
-    font-size: 1.2em;
+.markdown-section address,
+.markdown-section caption,
+.markdown-section cite,
+.markdown-section code,
+.markdown-section dfn,
+.markdown-section em,
+.markdown-section th,
+.markdown-section var {
+    font-style: normal;
+    font-size: 13px;
 }
 
-/* 一致化 horizontal rule */
+.markdown-section ul,
+.markdown-section ol {
+    margin-left: 2.5em;
+    padding: 0;
+}
+
+.markdown-section li {
+    padding: 5px 0;
+}
+
+.markdown-section caption,
+.markdown-section th {
+    text-align: left;
+}
+
+.markdown-section q:before,
+.markdown-section q:after {
+    content: "";
+}
+
+.markdown-section sub,
+.markdown-section sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+.markdown-section :root sub,
+.markdown-section :root sup {
+    vertical-align: baseline;
+    /* for ie9 and other modern browsers */
+}
+
+.markdown-section sup {
+    top: -0.5em;
+}
+
+.markdown-section sub {
+    bottom: -0.25em;
+}
+
+.markdown-section a {
+    color: #1abc9c;
+}
+
+.markdown-section a:hover {
+    text-decoration: underline;
+}
+
+.markdown-section .typo a {
+    border-bottom: 1px solid #1abc9c;
+}
+
+.markdown-section .typo a:hover {
+    border-bottom-color: #555;
+    color: #555;
+    text-decoration: none;
+}
+
+.markdown-section ins,
+.markdown-section a {
+    text-decoration: none;
+}
+
+.markdown-section u,
+.markdown-section .typo-u {
+    text-decoration: underline;
+}
+
+.markdown-section mark {
+    background: #fffdd1;
+    border-bottom: 1px solid #ffedce;
+    padding: 2px;
+    margin: 0 5px;
+}
+
+.markdown-section pre,
+.markdown-section code,
+.markdown-section pre tt {
+    font-family: Courier, "Courier New", monospace;
+}
+
+.markdown-section code {
+    background-color: #f8f8f8;
+    color: #e96900;
+    padding: 3px 5px;
+    margin: 0 2px;
+}
+
+.markdown-section pre {
+    background: #f6f8fa;
+    padding: 0;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+}
+
 .markdown-section hr {
-    margin: 40px 0 20px;
+    margin: 40px 1em 20px;
     padding: 0;
     height: 2px;
     border: none;
@@ -307,9 +452,193 @@ h4 {
     background-image: repeating-linear-gradient(-45deg, #fff, #fff 2px, transparent 2px, transparent 8px);
 }
 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs,
-.book .book-body .page-wrapper .page-inner section.normal code .hljs {
-    background: #f7f7f7 !important;
+.markdown-section small,
+.markdown-section .typo-small,
+.markdown-section figcaption {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.markdown-section strong,
+.markdown-section b {
+    font-weight: bold;
+    color: #555;
+}
+
+.markdown-section [draggable] {
+    cursor: move;
+}
+
+.markdown-section .clearfix:before,
+.markdown-section .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.markdown-section .clearfix:after {
+    clear: both;
+}
+
+.markdown-section .clearfix {
+    zoom: 1;
+}
+
+.markdown-section .textwrap,
+.markdown-section .textwrap td,
+.markdown-section .textwrap th {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.markdown-section .textwrap-table {
+    table-layout: fixed;
+}
+
+.markdown-section .serif {
+    font-family: Palatino, Optima, Georgia, serif;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+    font-family: Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.5;
+}
+
+.markdown-section h1 {
+    font-size: 2.2em;
+}
+
+.markdown-section h2 {
+    border-bottom: 1px solid #eaecef;
+    margin: 0.6em 0;
+    font-size: 1.6em;
+}
+
+.markdown-section h3 {
+    font-size: 1.4em;
+}
+
+.markdown-section h4 {
+    font-size: 1.2em;
+}
+
+
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: white;
+    color: black;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+    color: #008000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+    color: #00f;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+    color: #a31515;
+}
+
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+    color: #2b91af;
+}
+
+.hljs-doctag {
+    color: #808080;
+}
+
+.hljs-attr {
+    color: #f00;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+    color: #00b0e8;
+}
+
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+
+/* 文章内代码行号高亮 */
+.hljs>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    border: 1px solid #eff1f3;
+}
+
+.hljs li {
+    padding-left: 2px;
+    position: relative;
+}
+
+.hljs .hljs-ln-line {
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.hljs li.mark {
+    background-color: #fffbdd !important;
+}
+
+.hljs li:hover {
+    background-color: #f3f3f3 !important;
+}
+
+.hljs .hljs-ln-numbers {
+    display: inline-block;
+    width: 40px;
+    padding-left: 10px;
+
+}
+
+.hljs li:nth-of-type(even) {
+    background-color: #fcfcfc;
+    color: inherit;
 }
 
 .copy-code-btn {

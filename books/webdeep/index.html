@@ -44,10 +44,6 @@
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-xusir/style.css">
                 
             
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
-                
-            
         
 
     
@@ -423,7 +419,7 @@ console.log(o.x); //  1 &#x8F93;&#x51FA;&#x5BF9;&#x8C61;&#x5C5E;&#x6027; x &#x76
 </code></pre><h2 id="header_anchor7" class="article-header">&#x5B58;&#x5728;&#x6027;<a href="#header_anchor7"><i class="fa fa-link"></i></a></h2>
 <p>myObject.a &#x7684;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x662F; undefined&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x503C;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5C5E;&#x6027;&#x4E2D;&#x5B58;&#x50A8;&#x7684; undefined&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x56E0;&#x4E3A;&#x5C5E;&#x6027;&#x4E0D;&#x5B58;&#x5728;&#x6240;&#x4EE5;&#x8FD4;&#x56DE; undefined&#x3002;<strong>&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x533A;&#x5206;&#x8FD9; 2 &#x79CD;&#x60C5;&#x51B5;&#x5462;&#xFF1F;</strong></p>
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;</p>
-<pre><code>var myObject = { 
+<pre><code class="lang-js">var myObject = { 
     a:2
 };
 
@@ -432,7 +428,8 @@ console.log(o.x); //  1 &#x8F93;&#x51FA;&#x5BF9;&#x8C61;&#x5C5E;&#x6027; x &#x76
 
 myObject.hasOwnProperty( &quot;a&quot; ); // true
 myObject.hasOwnProperty( &quot;b&quot; ); // false
-</code></pre><p>&#x26A0;&#xFE0F; &#x770B;&#x8D77;&#x6765; in &#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x5BB9;&#x5668;&#x5185;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x68C0;&#x67E5;&#x7684;&#x662F;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x540D;<code>&#x662F;&#x5426;&#x5B58;&#x5728;</code>&#x3002;&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x6765;&#x8BF4;&#x8FD9;&#x4E2A;&#x533A;&#x522B;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;4 in [2, 4, 6] &#x7684;&#x7ED3;&#x679C;&#x5E76;&#x4E0D;&#x662F;&#x4F60;&#x671F;&#x5F85;&#x7684; True&#xFF0C;&#x56E0;&#x4E3A; [2, 4, 6] &#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x662F; 0&#x3001;1&#x3001;2&#xFF0C;&#x6CA1;&#x6709; 4&#x3002;</p>
+</code></pre>
+<p>&#x26A0;&#xFE0F; &#x770B;&#x8D77;&#x6765; in &#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x5BB9;&#x5668;&#x5185;&#x662F;&#x5426;&#x6709;&#x67D0;&#x4E2A;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x68C0;&#x67E5;&#x7684;&#x662F;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x540D;<code>&#x662F;&#x5426;&#x5B58;&#x5728;</code>&#x3002;&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x6765;&#x8BF4;&#x8FD9;&#x4E2A;&#x533A;&#x522B;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;4 in [2, 4, 6] &#x7684;&#x7ED3;&#x679C;&#x5E76;&#x4E0D;&#x662F;&#x4F60;&#x671F;&#x5F85;&#x7684; True&#xFF0C;&#x56E0;&#x4E3A; [2, 4, 6] &#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x662F; 0&#x3001;1&#x3001;2&#xFF0C;&#x6CA1;&#x6709; 4&#x3002;</p>
 <h2 id="header_anchor8" class="article-header">&#x5229;&#x7528; Object.freeze() &#x63D0;&#x5347;&#x6027;&#x80FD;<a href="#header_anchor8"><i class="fa fa-link"></i></a></h2>
 <p>Object.freeze() &#x662F; ES5 &#x65B0;&#x589E;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x51BB;&#x7ED3;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x9632;&#x6B62;&#x5BF9;&#x8C61;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x6570;&#x7EC4;&#x6216; Object&#xFF0C;&#x5E76;&#x4E14;&#x786E;&#x4FE1;&#x6570;&#x636E;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#xFF0C;<strong>&#x4F7F;&#x7528; Object.freeze() &#x53EF;&#x4EE5;&#x8BA9;&#x6027;&#x80FD;&#x5927;&#x5E45;&#x63D0;&#x5347;</strong>&#x3002;&#x5728;&#x6211;&#x7684;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x8FD9;&#x79CD;&#x63D0;&#x5347;&#x5927;&#x7EA6;&#x6709; 5~10 &#x500D;&#xFF0C;&#x500D;&#x6570;&#x968F;&#x7740;&#x6570;&#x636E;&#x91CF;&#x9012;&#x589E;&#x3002;</p>
@@ -540,7 +537,7 @@ myObject.hasOwnProperty( &quot;b&quot; ); // false
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-livereload","-lunr","-search","alerts","expandable-chapters-small","back-to-top-button","quiz","fancybox","xusir","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"提交答案","showExplanation":"显示解释","showCorrect":"显示正确答案","explanationHeader":"提示"},"text":{"noChosen":"2货，能先选择个答案吗！！","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"alerts":{},"expandable-chapters-small":{},"back-to-top-button":{},"fancybox":{"helpers":{"buttons":{}}},"xusir":{},"highlight":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"xusir","logoPath":"/assets/images/avatar.png","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"siteName":"徐Sir的网志","structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bookName":"实现原理：前端核心技术点深入探研","variables":{"author":"徐Sir"},"title":"实现原理：前端核心技术点深入探研 - 徐Sir的网志","language":"zh-hans","output.name":"site","fromNav":"tech","gitbook":"*"},"file":{"path":"README.md","mtime":"2018-10-09T10:21:47.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-09T10:21:56.200Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-livereload","-lunr","-search","alerts","expandable-chapters-small","back-to-top-button","quiz","fancybox","xusir","-highlight","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"提交答案","showExplanation":"显示解释","showCorrect":"显示正确答案","explanationHeader":"提示"},"text":{"noChosen":"2货，能先选择个答案吗！！","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"alerts":{},"expandable-chapters-small":{},"back-to-top-button":{},"fancybox":{"helpers":{"buttons":{}}},"xusir":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"xusir","logoPath":"/assets/images/avatar.png","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"siteName":"徐Sir的网志","structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bookName":"实现原理：前端核心技术点深入探研","variables":{"author":"徐Sir"},"title":"实现原理：前端核心技术点深入探研 - 徐Sir的网志","language":"zh-hans","output.name":"site","fromNav":"tech","gitbook":"*"},"file":{"path":"README.md","mtime":"2018-10-09T10:59:05.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-09T12:43:19.573Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -590,7 +587,11 @@ myObject.hasOwnProperty( &quot;b&quot; ); // false
         
     
         
-        <script src="gitbook/gitbook-plugin-xusir/highlight.min.js"></script>
+        <script src="gitbook/gitbook-plugin-xusir/highlight.pack.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-xusir/highlightjs-line-numbers.min.js"></script>
         
     
         

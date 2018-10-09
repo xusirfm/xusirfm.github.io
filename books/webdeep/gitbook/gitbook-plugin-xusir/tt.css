@@ -1,0 +1,245 @@
+/* 去掉各Table cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+  display: block;
+  padding: 15px 1em 15px 2em;
+}
+table th {
+  font-weight: bold;
+}
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+  white-space: nowrap;
+}
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+/* 去除默认边框 */
+fieldset,
+img {
+  border: 0;
+  margin-left: 5px;
+  max-width: 500px;
+}
+/* 块/段落引用 */
+blockquote {
+  position: relative;
+  color: #666;
+  padding: 1px 10px;
+  margin: .5em 1em;
+  border-left: 3px solid #cbcbcb;
+  background-color: #f8f8f8;
+}
+h1 + blockquote p,
+h2 + blockquote p,
+h3 + blockquote p {
+  padding: 0;
+}
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym,
+abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr {
+  cursor: help;
+}
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-size: 13px;
+}
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul,
+ol {
+  margin-left: 2.5em;
+  padding: 0;
+}
+li {
+  padding: 5px 0;
+}
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,
+th {
+  text-align: left;
+}
+q:before,
+q:after {
+  content: "";
+}
+/* 统一上标和下标 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+:root sub,
+:root sup {
+  vertical-align: baseline;
+  /* for ie9 and other modern browsers */
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* 让链接在 hover 状态下显示下划线 */
+a {
+  color: #1abc9c;
+}
+a:hover {
+  text-decoration: underline;
+}
+.typo a {
+  border-bottom: 1px solid #1abc9c;
+}
+.typo a:hover {
+  border-bottom-color: #555;
+  color: #555;
+  text-decoration: none;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,
+a {
+  text-decoration: none;
+}
+/* 专名号：虽然 u 已经重回 html5 Draft，但在所有浏览器中都是可以使用的，
+ * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
+ * 关于 <u> 标签：http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
+ * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
+ * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
+ */
+u,
+.typo-u {
+  text-decoration: underline;
+}
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
+}
+/* 代码片断 */
+pre,
+code,
+pre tt {
+  font-family: Courier, "Courier New", monospace;
+}
+code {
+  background-color: #f8f8f8;
+  color: #e96900;
+  padding: 3px 5px;
+  margin: 0 2px;
+}
+pre {
+  background: #f6f8fa;
+  padding: 5px;
+  margin: 1em;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+/* 一致化 horizontal rule */
+hr {
+  margin: 40px 1em 20px;
+  padding: 0;
+  height: 2px;
+  border: none;
+  background-color: #e2e0e0;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 2px, transparent 2px, transparent 8px);
+}
+/* 底部印刷体、版本等标记 */
+small,
+.typo-small,
+figcaption {
+  font-size: 0.9em;
+  color: #888;
+}
+strong,
+b {
+  font-weight: bold;
+  color: #555;
+}
+/* 可拖动文件添加拖动手势 */
+[draggable] {
+  cursor: move;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* 强制文本换行 */
+.textwrap,
+.textwrap td,
+.textwrap th {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.textwrap-table {
+  table-layout: fixed;
+}
+/* 提供 serif 版本的字体设置: iOS 下中文自动 fallback 到 sans-serif */
+.serif {
+  font-family: Palatino, Optima, Georgia, serif;
+}
+/* 保证块/段落之间的空白隔行 */
+blockquote {
+  margin-bottom: 1.2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  border-bottom: 1px solid #eaecef;
+  margin: 0.6em 0;
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.2em;
+}
