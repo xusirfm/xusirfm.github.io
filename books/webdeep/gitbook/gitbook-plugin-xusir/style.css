@@ -209,7 +209,8 @@
     margin-left: 20px;
     flex-shrink: 0;
     width: 240px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: none
 }
 
 .right.page-toc ul {
@@ -613,6 +614,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs li {
     padding-left: 2px;
     position: relative;
+    display: flex;
+}
+
+.hljs li:hover {
+    background-color: #f3f3f3 !important;
 }
 
 .hljs .hljs-ln-line {
@@ -625,15 +631,13 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     background-color: #fffbdd !important;
 }
 
-.hljs li:hover {
-    background-color: #f3f3f3 !important;
-}
+
 
 .hljs .hljs-ln-numbers {
     display: inline-block;
     width: 40px;
     padding-left: 10px;
-
+    flex-shrink: 0
 }
 
 .hljs li:nth-of-type(even) {
@@ -650,4 +654,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     cursor: pointer;
     color: hsla(0, 0%, 55%, .8);
     transition: color .1s;
+}
+
+@media screen and (min-width:750px) {
+    .right.page-toc {
+        display: block
+    }
 }
