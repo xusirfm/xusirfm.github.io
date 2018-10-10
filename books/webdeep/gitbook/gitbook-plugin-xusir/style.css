@@ -639,7 +639,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     display: inline-block;
     width: 40px;
     padding-left: 10px;
-    flex-shrink: 0
+    flex-shrink: 0;
+    font-weight: bold;
+    color: #606362;
 }
 
 .hljs li:nth-of-type(even) {
