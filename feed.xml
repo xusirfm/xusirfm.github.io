@@ -9,7 +9,7 @@
       <item>
         <title>实现原理：前端核心技术点深入探研</title>
         <category>tech</category>
-        <description>Memcached服务器在启动时需要对关键的参数进行配置，下面我们就看一看Memcached在启动时需要设定哪些关键参数以及这些参数的作用。</description>
+        <description>Memcached1 服务器在启动时需要对关键的参数进行配置，下面我们就看一看Memcached在启动时需要设定哪些关键参数以及这些参数的作用。</description>
         <pubDate>2017-07-30 18:06:42 </pubDate>
         <link>http://localhost:40001/tech/webdeep.html</link>
         <guid isPermaLink="true">http://localhost:40001/tech/webdeep.html</guid>
