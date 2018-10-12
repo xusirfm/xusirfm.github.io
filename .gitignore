@@ -1,6 +1,7 @@
 .DS_Store
 Gemfile.lock
 
+
 # Editor directories and files
 .idea
 .vscode
