@@ -22,6 +22,10 @@ html {
     height: 100%
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* 通用 markdown 样式 start===================================== */
 
 html.borderbox *,
@@ -680,7 +684,7 @@ body {
     z-index: 1;
     display: none;
     width: 28px;
-    padding: 0 45px 0 10px;
+    padding: 25px;
     cursor: pointer;
 }
 
@@ -749,7 +753,7 @@ body {
     top: 100%;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
-    margin: 0 0 0 -95px;
+    margin: 0 0 0 -55px;
     padding: 0;
     -webkit-transition: -webkit-transform 300ms;
     transition: -webkit-transform 300ms;
@@ -776,7 +780,6 @@ body {
     font-size: 15px;
     line-height: 2.2;
     display: block;
-    width: 140px;
     margin: 0;
     padding: 8px 25px;
     background-color: #eee;
@@ -1072,6 +1075,7 @@ ol {
     margin-top: 2em;
     animation: intro 0.3s both;
     animation-delay: 0.45s;
+    z-index: 99;
 }
 
 .footer div {
@@ -1095,6 +1099,15 @@ ol {
    ========================================================================== */
 
 @media(max-width:1000px) {
+
+    .page-left {
+        display: none;
+    }
+
+    .page-right {
+        margin-left: 0;
+    }
+
     .directory-content {
         display: none;
     }
@@ -1318,11 +1331,7 @@ ol {
 
     .book-item {
         width: 100%;
-        padding: 10px 20px;
-    }
-
-    .book-item:first-child {
-        padding-top: 20px;
+        padding: 0 10px 10px !important;
     }
 
     .archive-page .book-item:first-child {
