@@ -11,6 +11,15 @@
         <category>tech</category>
         <description>著名物理学家费曼曾说：What I cannot recreate, I don’t understand，能否再创造是检验自己是否真正的理解透彻的有效方式。</description>
         <pubDate>2017-07-30 18:06:42 </pubDate>
+        <link>http://localhost:40001/tech/recreate.html</link>
+        <guid isPermaLink="true">http://localhost:40001/tech/recreate.html</guid>
+      </item>
+    
+      <item>
+        <title>实现原理：前端核心技术点深入探研</title>
+        <category>tech</category>
+        <description>深入了解工作原理可以了解到整个体系的基本特征、被设计的目的, 才有可能写出更好的代码和应用程序。</description>
+        <pubDate>2017-07-30 18:06:42 </pubDate>
         <link>http://localhost:40001/tech/webdeep.html</link>
         <guid isPermaLink="true">http://localhost:40001/tech/webdeep.html</guid>
       </item>
