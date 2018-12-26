@@ -944,6 +944,7 @@ ol {
 }
 
 .page-right {
+    width: 100%;
     margin-left: 210px;
     position: relative;
     display: block;
@@ -1014,6 +1015,10 @@ ol {
     line-height: 1.5em;
     height: 6.5em;
     overflow: hidden;
+}
+
+.book-item-container .item-desc p {
+    padding: 0
 }
 
 .book-item-container .item-slant {
